@@ -1,0 +1,76 @@
+.container{
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+[class*='cell'] {
+  box-sizing: border-box;
+  margin-right: -0.3em;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 1.618em;
+}
+
+.cell_fluid {
+  width: 100%;
+}
+
+.cell_2-3{
+	width: 66.6%;
+}
+
+.cell_1-3{
+	width: 33.3%;
+}
+
+@media (max-width: 30em) {
+  [class*='cell'] {
+    width: auto;
+    display: block;
+    margin: 0;
+  }
+}
+
+body {
+  font-family: 'Quando';
+  color: #333;
+  line-height: 30px;
+  font-size: 15px;
+}
+
+h1,h3 {
+  font-weight: normal;
+  text-align: center;
+}
+
+h1 {
+  font-size: 44px;
+  margin-top: 50px;
+}
+
+.lead {
+  font-size: 18px;
+  line-height: 35px;
+}
+
+span {
+  border-bottom: 1px dotted #333;
+  cursor: pointer;
+  display: inline;
+}
+
+span.title {
+  display: block;
+  border: 0;
+  font-style: italic;
+  color: #999;
+ 
+}
+.workshop {
+  padding: 8px 0;
+  border-top: 1px dotted #ddd;
+  border-bottom: 1px dotted #ddd;
+}
+.footer {
+  font-size: 13px;
+}
